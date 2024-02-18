@@ -102,6 +102,10 @@ section {
     /* border: 1px solid red; */
 }
 
+.home-content .download {
+    margin-top: 10rem;
+}
+
 .home-img img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
