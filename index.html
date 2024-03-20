@@ -26,12 +26,20 @@
 
         <i class='bx bx-menu' id="menu-icon"><span class="animate" style="--i:2;"></span></i>
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#about">About</a>
+            <a href="#home" class="active link">Home</a>
+            <a href="#skills" class="link">Skills</a>
+            <a href="#about"  class="link">About</a>
             <!-- <a href="#education">Education</a>
             <a href="#certificates">Certificates</a> -->
-            <a href="#contact">Contact</a>
+            <div class="dropdown">
+                <a href="#services" class="link" id="service">Services</a>
+                <menu class="dropdown__content">
+                    <a href="503.html">QA Tester</a>
+                    <a href="503.html">Bug Hunting</a>
+                    <a href="503.html">Web Services</a>
+                </menu>
+            </div>
+            <a href="#contact" class="link">Contact</a>
 
             <span class="active-nav"></span>
             <span class="animate" style="--i:2;"></span>
@@ -51,7 +59,6 @@
                     <h1>Kirk Henrich Cambel Gamo Website Landing Page</h1>
                     <!-- <h3>Hello, It's Me!</h3> -->
                     <h3>I am a <span class="multiple-text"></span></h3>
-
                     <a href="assets/GAMO_CV.pdf" download="Kirk-Gamo-CV" class="btn download">Download CV</a>
         </div>  
 
@@ -328,15 +335,15 @@
 
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
             </div>
             <div class="input-box">
                 <input type="number" placeholder="Mobile Number">
                 <input type="text" placeholder="Email Subject">
             </div>
             <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <a href="http://gamo-activity4.netlify.app"><input type="submit" value="Send Message" class="btn"></a>
         </form>
     </section>
 
